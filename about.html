@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+		<title>Yoshino's Portfolio</title>
+    <meta name="description" content="黒田禎乃のポートフォリオサイト">
+    <link rel="icon" type="image/png" href="image/icon.png" alt="ロゴ">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style type="text/css">
+      p.subtext {
+        font-family:'FOT-TsukuARdGothic Std';
+        font-size: 18px;
+        color: #22201F;
+        text-align: center;
+        padding-bottom: 1rem;
+      }
+      .about-contents {
+        margin: 3.5rem 0 10rem;
+      }
+      .about-contents-list {
+        margin-top: 8px;
+      }
+      p.about-contents-text {
+        font-family:'FOT-TsukuARdGothic Std';
+        font-size: 18px;
+        color: #22201F;
+        margin-bottom: 40px;
+        line-height: 2.2;
+      }
+      p.about-contents-text-last {
+        font-family:'FOT-TsukuARdGothic Std';
+        font-size: 18px;
+        color: #22201F;
+        line-height: 2.2;
+      }
+      .about-contents {
+        display: flex;
+        justify-content: space-between;
+        margin: 3.5rem 0 0;
+      }
+      .about-img {
+        margin-top: 5rem;
+        margin-right: 4.5rem;
+        height: 5%;
+        border-radius: 10px;
+      }
+      .about-detail,.skills,.vision {
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .skills-contents {
+        margin-top: 3.5rem;
+        display: flex;
+        justify-content: center;
+      }
+      .adobe-skills {
+        margin-right: 4.5rem;
+      }
+      .skills-list {
+        display: flex;
+        margin-bottom: 4rem;
+      }
+      .skills-list-js {
+        display: flex;
+        margin-top: 5.8rem;
+      }
+      img.skills-img {
+        margin-right: 1rem;
+        width: 66px;
+        height: 66px;
+      }
+      p.skills-text {
+        font-family: 'FOT-TsukuARdGothic Std';
+        color: #22201F;
+        font-size: 18px;
+        line-height: 2.2;
+        margin-top: -12px;
+        margin-bottom: -12px;
+      }
+      .vision-contents {
+        margin-top: 3.5rem ;
+      }
+     img.vision-img {
+        display: block;
+        margin: 5rem auto;
+      }
+      .vision-lead {
+        max-width: 948px;
+        width: 100%;
+        margin: 0 auto;
+      }
+     p.vision-text {
+        font-family: 'FOT-TsukuARdGothic Std';
+        color: #22201F;
+        font-size: 20px;
+        line-height: 2.2;
+     }
+     p.vision-text-last {
+        font-family: 'FOT-TsukuARdGothic Std';
+        color: #22201F;
+        font-size: 20px;
+        line-height: 2.2;
+        text-align: center;
+     }
+     @media screen and (max-width: 599px){
+      body {
+        margin: 0;
+      }
+      .container {
+        max-width: 599px;
+        margin: auto;
+      }
+      .about-detail,.skills,.vision {
+        width: 100%;
+        margin-bottom: 5rem;
+      }
+      .about-contents {
+        display: block;
+        padding: 0 1rem ;
+      }
+      .about-contents-list {
+        padding-top: 1.5rem;
+      }
+      .about-img {
+        display: block;
+        margin: 0 auto;
+      }
+      .skills-contents {
+        display: block;
+        margin: 0 1rem;
+      }
+      .adobe-skills {
+        margin-right: 0;
+        margin-top: 3.5rem;
+      }
+      .vision-contents {
+        padding: 0 1rem;
+      }
+     }
+    </style>
+
+<!------- CSS --------->    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
+    <link href="css/style.css" rel="stylesheet">
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'vso5ihh',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+  </head>
+  <!-- ここまでhead -->
+  <!------ body ------>
+  <body>
+  <!---- header ------>
+  <header class="header">
+    <!-- ハンバーガーメニュー -->
+    <div class="openbtn"><span></span><span></span><span></span></div>
+    <nav id="g-nav" class="gnav">
+      <h1 class="logo"><a href="index.html"><img class="logo" src="image/yoshino's Portfolio site.png" alt="ロゴ"></a></h1>
+          <div id="g-nav-list">
+            <ul> 
+            <li><a href="about.html">About</a></li> 
+            <li><a href="works.html">Works</a></li> 
+            <li><a href="#contact">Contact</a></li> 
+            </ul>
+          </div>
+        <div class="circle-bg"></div>
+<!-- PCメニュー -->
+      <ul class="pc-menu">
+        <li class="pc-nav"><a href="about.html">About</a></li>
+        <li class="pc-nav"><a href="works.html">Works</a></li>
+        <li class="pc-nav"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+<div class="container">
+<!------ about ------->
+  <section class="about-detail">
+    <h2 class="first-title">About</h2>
+    <p class="subtext">私について</p>
+    <img class="decoration" src="image/icon.png" alt="アイコン">
+      <div class="about-contents">
+        <img src="image/about-img.JPG" class="about-img">
+        <div class="about-contents-list">
+          <p class="about-contents-text">
+          黒田禎乃&emsp;宮城県出身&emsp;25歳(1997年10月6日生まれ)
+          </p>
+          <p class="about-contents-text">
+          四年制大学の食品栄養学科卒業後、<br>食品会社に入社し、管理栄養士として勤めてきました。
+          </p>
+          <p class="about-contents-text">
+          2021年11月から、自分の強みとなる新たなスキルを身につけるため、デザインの勉強を始めました。その後、Webデザイナーになるため、本格的にデザインを勉強することを決意し、2022年2月に退職。
+          </p>
+          <p class="about-contents-text">
+          現在は、グラフィック・Webデザインを中心に、Webサイト・バナー・フライヤー・名刺・ロゴを作成しております。
+          </p>
+          <p class="about-contents-text-last">
+          趣味は、ドラマ、音楽、料理です。
+          </p>
+        </div>
+      </div>
+  </section>
+<!------ skills ------->
+<section class="skills">
+  <h2 class="first-title">Skills</h2>
+  <img class="decoration" src="image/icon.png" alt="アイコン">
+  <div class="skills-contents">
+    <div class="adobe-skills">
+      <div class="skills-list">
+          <img class="skills-img" src="image/ps.png" alt="photoshop">
+          <p class="skills-text">写真の補正や加工、切り抜きなどの作業が可能です。主にバナー制作で使用しています。
+          </p>
+      </div>
+      <div class="skills-list">
+        <img class="skills-img" src="image/ai.png" alt="illustration">
+        <p class="skills-text">簡単な文字の装飾の作成、作字の作成が可能です。主にロゴ、フライヤー作成で使用しています。
+        </p>
+      </div>
+      <div class="skills-list">
+        <img class="skills-img" src="image/xd.png" alt="xd">
+        <p class="skills-text">Webサイトのワイヤーフレーム、デザインカンプの作成が可能です。
+        </p>
+      </div>
+   </div>
+   <div class="coding-skills">
+    <div class="skills-list">
+      <img class="skills-img" src="image/html.png" alt="html">
+      <p class="skills-text">Webサイトを構築するために必要な一般的なタグを用いて、サイトをコーディングすることが可能です。
+      </p>
+    </div>
+    <div class="skills-list">
+      <img class="skills-img" src="image/css.png" alt="css">
+      <p class="skills-text">マークアップしたHTMLに対して、文字の色や大きさなどを装飾をすることが可能です。
+      </p>
+    </div>
+    <div class="skills-list-js">
+      <img class="skills-img" src="image/js.png" alt="javascript">
+      <p class="skills-text">jQueryを用いて、スライダーやスクロールなど簡単なアニメーションをWebサイトに実装することが可能です。
+      </p>
+    </div>
+  </div>
+  </div>
+</section>
+<!---- vision ------>
+<section class="vision">
+  <h2 class="first-title">Vision</h2>
+  <p class="subtext">デザイナーとしてどうなりたいか</p>
+  <img class="decoration" src="image/icon.png" alt="アイコン">
+    <div class="vision-contents">
+      <div class="vision-lead">
+        <p class="vision-text">
+          ・自分の経験を活かし、人の役に立てるデザイナーになる。<br>
+          ・お客様から依頼したいと思われるデザイナーになる。<br>
+          ・デザインの他にUI/UXデザインやディレクションといったスキルの知識を兼ね備えたデザイナーになる。<br>
+          ・目を惹くWebサイトのアニメーションを作成できるようになる。<br>
+          ・栄養士の知識とデザインを掛け合わせた仕事をしたい。<br>
+        </p>
+      </div>
+      <img class="vision-img" src="image/vision-img.png">
+      <p class="vision-text-last">
+        まずは、デザイン、コーディングの基礎を固めるために、 <br>日々勉強し、将来なりたい像に近づけるよう、努めたいと考えております。
+      </p>
+    </div>
+</section>
+</div>
+<!----- footer ------->
+<footer class="footer">
+  <p class="footer-text">©︎2022&nbsp;Yoshino’s&nbsp;Portfolio</p>
+</footer>
+<script>
+  //スクロールすると上部に固定させるための設定を関数でまとめる
+  function FixedAnime() {
+    var headerH = $('.header').outerHeight(true);
+    var scroll = $(window).scrollTop();
+    if (scroll >= headerH){//headerの高さ以上になったら
+        $('.header').addClass('fixed');//fixedというクラス名を付与
+      }else{//それ以外は
+        $('.header').removeClass('fixed');//fixedというクラス名を除去
+      }
+  }
+  
+  // 画面をスクロールをしたら動かしたい場合の記述
+  $(window).scroll(function () {
+    FixedAnime();/* スクロール途中からヘッダーを出現させる関数を呼ぶ*/
+  });
+  
+  // ページが読み込まれたらすぐに動かしたい場合の記述
+  $(window).on('load', function () {
+    FixedAnime();/* スクロール途中からヘッダーを出現させる関数を呼ぶ*/
+  });
+  $(".openbtn").click(function () {//ボタンがクリックされたら
+    $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
+      $("#g-nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
+      $(".circle-bg").toggleClass('circleactive');//丸背景にcircleactiveクラスを付与
+  });
+  
+  $("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
+      $(".openbtn").removeClass('active');//ボタンの activeクラスを除去し
+      $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスを除去
+      $(".circle-bg").removeClass('circleactive');//丸背景のcircleactiveクラスを除去
+  });
+  </script>
+  
+  </body>

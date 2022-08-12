@@ -1,0 +1,446 @@
+@charset "UTF-8";
+.openbtn,.circle-bg,#g-nav-list {
+  display: none;
+}
+.pc-menu {
+  display: block;
+}
+/* FV */
+.fv {
+  background-image: url(../image/Portfolio_FV-01.jpg);
+  background-size: contain;
+  height: 46.8vw;
+  background-repeat: no-repeat;
+}
+/* header */
+/*========= 上部固定させるためのCSS ===============*/
+.header{
+	height: 70px;
+	width:100%;
+}
+
+/*JSを使いfixedクラスが付与された際の設定*/
+.header.fixed{
+	position: fixed;
+  z-index: 999;
+  top:0;
+  left:0;
+}
+.gnav {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 66px 0;
+  display: flex;
+  justify-content: space-between;
+}
+ul.pc-menu {
+  display: flex;
+}
+li.pc-nav {
+  padding-right: 80px;
+  font-family: "PSL Ornanong Pro",system-ui;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #22201F;
+  transition: 0.5s
+}
+li.pc-nav:hover {
+  color: #F5EEE5;
+}
+.container {
+  margin: 0 auto;
+}
+/* 一括指定 */
+h2.first-title {
+  padding-top: 10rem;
+  padding-bottom: 1rem;
+  font-family: "PSL Ornanong Pro",system-ui;
+  font-size: 2rem;
+  color: #22201F;
+  text-align: center;
+}
+img.decoration {
+  width: 27.3px;
+  display: block;
+  margin: 0 auto;
+}
+.about,.works,.contact{
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+/* about */
+p.about-text {
+  padding: 4rem 0;
+  font-family:'FOT-TsukuARdGothic Std';
+  text-align: center;
+  line-height: 2.2;
+}
+a.view-more {
+  text-align: center;
+  padding: 17px 68px;
+  font-family: "PSL Ornanong Pro",system-ui;
+  font-size: 1.25rem;
+  font-weight: bold;
+  background-color: #CA8344;
+  border-radius: 3px;
+  color:#F5EEE5;
+  display: block;
+  margin: 0 auto;
+  width: 232px;
+  height: 61px;
+  transition: 1.0s
+}
+a.view-more:hover{
+  opacity:0.5;
+} 
+/* works */
+.works-list {
+  margin: 0 auto;
+  max-width: 848px;
+  width: 100%;
+}
+h3.second-title {
+  font-family: "PSL Ornanong Pro",system-ui;
+  padding: 56px 0;
+  color: #22201F;
+  display: block;
+  font-size: 26px;
+}
+ul.production-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5rem 4rem;
+}
+li.production {
+  position: relative;
+}
+li.production span.mask{
+  position: relative;
+	transition: .3s ease-in-out;
+	display: block;
+    line-height: 0;
+}
+li.production:hover span.mask::before {/*hoverした時の変化*/
+	content:"";
+	position: absolute;
+	z-index:2;
+	top:12px;
+	left:12px;
+	width: 90%;
+  height: 92%;
+	background:#fff;
+  opacity: 0.5;
+}
+li.production img {
+	filter: blur(0);
+	transition: .3s ease-in-out;
+}
+li.production:hover img {/*hoverした時の変化*/
+  filter: blur(2px);
+}
+li.production span.cap{
+  opacity: 0;
+    transition: .5s ease-in-out;
+    position: absolute;
+    z-index: 3;
+    top: 48%;
+    left: 10%;
+    transform: translate(-5%,10%);
+    font-family: 'FOT-TsukuARdGothic Std';
+    font-size: 11px;
+    color: #22201F;
+    line-height: 1.5;
+}
+li.production:hover span.cap{/*hoverした時の変化*/
+	opacity:1;
+}
+/* contact */
+.contact-subtext {
+  font-family:'FOT-TsukuARdGothic Std';
+  font-size: 18px;
+  color: #22201F;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.formrun {
+  max-width: 458px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 2.5rem;
+}
+.contact-label {
+  font-family:'FOT-TsukuARdGothic Std';
+  font-size: 18px;
+  color: #22201F;
+}
+.contact-item {
+  border: 1px solid #22201F;
+  height: 50px;
+  flex: 1;
+  width: 100%;
+  background-color: rgba(245, 238, 229, 0.15);
+  margin: 24px 0;
+}
+.contact-item-mail {
+  border: 1px solid #22201F;
+  height: 40px;
+  flex: 1;
+  width: 100%;
+  background-color: rgba(245, 238, 229, 0.15);
+  margin: 24px 0;
+}
+.contact-item-main {
+  border: 1px solid #22201F;
+  height: 216px;
+  flex: 1;
+  width: 100%;
+  background-color: rgba(245, 238, 229, 0.15);
+  margin: 24px 0 80px;
+}
+.submit-button {
+  font-family:'FOT-TsukuARdGothic Std';
+  font-size: 1.25rem;
+  font-weight: bold;
+  background-color: #CA8344;
+  width: 232px;
+  height: 61px;
+  border-radius: 3px;
+  color:#F5EEE5;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  transition: 1.0s
+}
+.submit-button:hover{
+  opacity:0.5;
+} 
+
+/* footer */
+.footer {
+  display: block;
+  background-color: #F5EEE5;
+  height: 189px;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 10rem;
+}
+.footer-text {
+  font-family: "PSL Ornanong Pro",system-ui;
+  color: #22201F;
+  font-size: 20px;
+  padding: 81px 0;
+  text-align: center;
+}
+body{
+  animation-name:fadeDownAnime;
+  animation-duration:2s;
+  animation-fill-mode:forwards;
+  opacity:0;
+  }
+  
+  @keyframes fadeDownAnime{
+    from {
+      opacity: 0;
+    transform: translateY(-100px);
+    }
+  
+    to {
+      opacity: 1;
+    transform: translateY(0);
+    }
+  }
+/* スマホ */
+@media screen and (max-width: 599px){
+  .openbtn,.circle-bg,#g-nav-list {
+    display: block;
+  }
+  ul.pc-menu {
+    display: none;
+  }
+/* header */
+.gnav {
+  padding: 1rem;
+  max-width: 599px;
+  width: 100%;
+}
+img.logo {
+  width: 50%;
+  padding-top: 1rem;
+}
+/* SP-FV */
+.fv {
+  background-image: url(../image/SP_FV.png);
+  background-size: cover;
+  height: 433px;
+  background-repeat: no-repeat;
+}
+
+/*========= ナビゲーションのためのCSS ===============*/
+
+/*アクティブになったエリア*/
+#g-nav.panelactive{
+  position:fixed;
+  z-index: 999;
+  top: 0;
+  width:100%;
+  height: 100vh;
+}
+
+/*丸の拡大*/
+.circle-bg{
+  position: fixed;
+  z-index:3;
+  /*丸の形*/
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #F5EEE5;
+  /*丸のスタート位置と形状*/
+  transform: scale(0);
+  right:-50px;
+  top:-50px;
+  transition: all .6s;
+}
+
+.circle-bg.circleactive{
+transform: scale(50);
+}
+
+/*ナビゲーションの縦スクロール*/
+#g-nav-list{
+  display: none;
+  position: fixed;
+  z-index: 999; 
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+#g-nav.panelactive #g-nav-list{
+   display: block; 
+}
+
+/*ナビゲーション*/
+#g-nav ul {
+  opacity: 0;
+  position: absolute;
+  z-index: 999;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+/*背景が出現後にナビゲーションを表示*/
+#g-nav.panelactive ul {
+  opacity:1;
+}
+
+#g-nav.panelactive ul li{
+animation-name:gnaviAnime;
+animation-duration:1s;
+animation-delay:.2s;
+animation-fill-mode:forwards;
+opacity:0;
+}
+@keyframes gnaviAnime{
+0% {
+opacity: 0;
+}
+100% {
+opacity: 1;
+}
+}
+
+
+/*リストのレイアウト設定*/
+#g-nav li{
+text-align: center; 
+list-style: none;
+}
+
+#g-nav li a{
+font-family:"PSL Ornanong Pro",system-ui;
+font-size: 1.5rem;
+color: #22201F;
+text-decoration: none;
+padding:1rem 10px;
+display: block;
+letter-spacing: 0.1em;
+font-weight: 600;
+transition: 0.5s;
+}
+#g-nav li a:hover{
+  opacity:0.5;
+} 
+
+/*========= ボタンのためのCSS ===============*/
+.openbtn{
+position:fixed;
+top:10px;
+right: 10px;
+z-index: 9999;/*ボタンを最前面に*/
+cursor: pointer;
+  width: 50px;
+  height:50px;
+}
+
+/*×に変化*/	
+.openbtn span{
+  display: inline-block;
+  transition: all .4s;
+  position: absolute;
+  left: 14px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #666;
+  width: 45%;
+}
+
+.openbtn span:nth-of-type(1) {
+top:15px;	
+}
+
+.openbtn span:nth-of-type(2) {
+top:23px;
+}
+
+.openbtn span:nth-of-type(3) {
+top:31px;
+}
+
+.openbtn.active span:nth-of-type(1) {
+  top: 18px;
+  left: 18px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 30%;
+}
+
+.openbtn.active span:nth-of-type(2) {
+opacity: 0;
+}
+
+.openbtn.active span:nth-of-type(3){
+  top: 30px;
+  left: 18px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 30%;
+}
+
+/* about */
+h2.first-title {
+  padding-top: 3.5rem;
+}
+p.about-text {
+  padding-top: 3.5rem;
+}
+/* works */
+.works-list {
+  text-align: center;
+}
+.production-list {
+  justify-content: center;
+}
+}

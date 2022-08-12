@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+		<title>Yoshino's Portfolio</title>
+    <meta name="description" content="黒田禎乃のポートフォリオサイト">
+    <link rel="icon" type="image/png" href="image/icon.png" alt="ロゴ">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style type="text/css">
+      .verdureito {
+        max-width: 1000px;
+        margin: 0 auto;
+        width: 100%;
+      }
+      h3.works-title {
+        padding-top: 10rem;
+        font-family: "PSL Ornanong Pro",system-ui;
+        color: #22201F;
+        font-size: 28px;
+        text-align: center;
+        padding-bottom: 1rem;
+      }
+      h4.works-lead {
+        font-family:'FOT-TsukuARdGothic Std';
+        font-size: 28px;
+        color: #22201F;
+        text-align: center;
+        margin: 3.5rem 0;
+      }
+      .works-contents {
+        margin: 4rem 140px;
+      }
+      #works-url{
+        background-color: #F5EEE5;
+        width: 720px;
+        height: 55px;
+
+      }
+      a.works-url {
+        display: block;
+        font-family: "PSL Ornanong Pro",system-ui;
+        color: #22201F;
+        font-size: 20px;
+        padding: 14px 270px;
+        text-align: center;
+        
+      }
+      .works-items {
+        display: flex;
+        margin: 4rem auto;
+      }
+      h5.works-heading {
+        width: 159px;
+        font-family:'FOT-TsukuARdGothic Std';
+        font-size: 18px;
+        font-weight: bold;
+        color: #22201F;
+        margin-right: 5rem;
+      }
+      p.works-text {
+        width: 481px;
+        font-family:'FOT-TsukuARdGothic Std';
+        font-size: 18px;
+        color: #22201F;
+        line-height: 2.2;
+        margin: -8px 0;
+      }
+      .website-contents {
+        display: flex;
+        justify-content: space-between;
+      }
+      .other-works-detail {
+        display: flex;
+      }
+      img.arrow {
+        width: 10%;
+        height: 10%;
+        margin-left: 1rem;
+        padding: 7px 0;
+      }
+      a.other-works {
+        text-align: center;
+        padding: 17px 48px;
+        font-family: "PSL Ornanong Pro",system-ui;
+        font-size: 1.25rem;
+        font-weight: bold;
+        background-color: #CA8344;
+        border-radius: 3px;
+        color:#F5EEE5;
+        display: block;
+        margin: 10rem auto 0;
+        width: 232px;
+        height: 61px;
+        transition: 1.0s
+      }
+      a.other-works:hover {
+        opacity:0.5;
+      }
+      @media screen and (max-width: 599px){
+        .verdureito,.footer{
+          max-width: 599px;
+          margin: 0 auto;
+        }
+        .works-contents {
+          margin: 0 auto;
+          padding: 0 1rem;
+        }
+        h3.works-title {
+          padding-top: 3.5rem;
+        }
+        .verdureito-img {
+          max-width: 599px;
+          width: 100%;
+          padding: 0 1rem;
+        }
+        .works-url {
+          width: 599px;
+        }
+        .website-contents {
+          display: block;
+          max-width: 599px;
+          margin: 0 2rem;
+          background-image: url(image/website4-sp.png);
+          height: 1440px;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+        .website-1 {
+          display: none;
+        }
+        .website-2 {
+          display: none;
+        }
+        #works-url {
+          margin-top: 4rem;
+          max-width: 599px;
+          width: 100%;
+          text-align: center;
+        }
+        a.works-url {
+          width: 100%;
+          padding: 14px 0;
+        }
+        .other-works {
+          max-width: 599px;
+          width: 100%;
+          text-align: center;
+        }
+        .other-works-detail {
+          width: 100%;
+        }
+      }
+    </style>
+
+<!------- CSS --------->    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
+    <link href="css/style.css" rel="stylesheet">
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'vso5ihh',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <!-- ここまでhead -->
+  <!------ body ------>
+  <body>
+  <!---- header ------>
+  <header class="header">
+    <!-- ハンバーガーメニュー -->
+    <div class="openbtn"><span></span><span></span><span></span></div>
+    <nav id="g-nav" class="gnav">
+      <h1 class="logo"><a href="index.html"><img class="logo" src="image/yoshino's Portfolio site.png" alt="ロゴ"></a></h1>
+          <div id="g-nav-list">
+            <ul> 
+            <li><a href="about.html">About</a></li> 
+            <li><a href="works.html">Works</a></li> 
+            <li><a href="#contact">Contact</a></li> 
+            </ul>
+          </div>
+        <div class="circle-bg"></div>
+<!-- PCメニュー -->
+      <ul class="pc-menu">
+        <li class="pc-nav"><a href="about.html">About</a></li>
+        <li class="pc-nav"><a href="works.html">Works</a></li>
+        <li class="pc-nav"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+<div class="container">
+<!------ website ------->
+  <section class="verdureito">
+    <h3 class="works-title">Website</h3>
+    <img class="decoration" src="image/icon.png" alt="アイコン">
+    <h4 class="works-lead">【自主制作】架空八百屋のホームページ</h4>
+    <img class="verdureito-img" src="image/verdureito-fv.jpg" alt="架空八百屋のホームページのファーストビュー">
+      <div class="works-contents">
+          <div class="works-items">
+            <h5 class="works-heading">概要</h5>
+            <p class="works-text">架空八百屋のホームページのデザインカンプ作成をしました。</p>
+          </div>
+          <div class="works-items">
+            <h5 class="works-heading">クライアント情報</h5>
+            <p class="works-text">有機栽培にこだわった農薬なしの野菜を販売。宮城の生産者をベースに地産地消を応援。</p>
+          </div>
+          <div class="works-items">
+            <h5 class="works-heading">要件定義</h5>
+            <p class="works-text">目的：認知度向上<br>
+              ターゲット：体、健康を意識している人、美味しい野菜を手に入れたい人</p>
+          </div>
+          <div class="works-items">
+            <h5 class="works-heading">ペルソナ</h5>
+            <p class="works-text">40歳/ゆうこさん/女性/化粧品メーカーで働く正社員<br>
+              コロナ禍なので、在宅の日も増えたこと、外出自粛になったことで、前に比べて、自炊が増えた。また健康診断で血圧が高かったので、健康面を気を使うようになった。</p>
+          </div>
+          <div class="works-items">
+            <h5 class="works-heading">制作期間</h5>
+            <p class="works-text">1週間</p>
+          </div>
+          <div class="works-items">
+            <h5 class="works-heading">使用ツール</h5>
+            <p class="works-text">Photoshop / Illustrator / XD</p>
+          </div>
+          <div class="works-items">
+            <h5 class="works-heading">制作</h5>
+            <p class="works-text">2022年</p>
+          </div>
+          <div class="works-items">
+            <h5 class="works-heading">工夫した点</h5>
+            <p class="works-text">・野菜が美味しそうに見えるように、写真を加工して、彩度・明度をあげました。<br>
+              ・お店を紹介するという役割だけではなく、おすすめの野菜やレシピといったトピックスを加えることで、初めてサイトを見にきた人が、毎回サイトにアクセスしたくなるホームページに仕上げました。<br>
+              ・八百屋のホームページと分かるように、ナチュラルなイメージをテーマとして作成しました。</p>
+          </div>
+        </div>
+        <div class="website-contents">
+          <img class="website-1" src="image/website4-1.jpg" alt="verdureitoのデザインカンプ1">
+          <img class="website-2" src="image/website4-2.jpg" alt="verdureitoのデザインカンプ2">
+        </div>
+        <a class="other-works" href="works.html">
+          <div class="other-works-detail">
+            <p>Other&nbsp;Works</p>
+            <img class="arrow" src="image/パス 1.png" alt="矢印">
+          </div>
+        </a>
+  </section>
+</div>
+<!----- footer ------->
+<footer class="footer">
+  <p class="footer-text">©︎2022&nbsp;Yoshino’s&nbsp;Portfolio</p>
+</footer>
+<script>
+  //スクロールすると上部に固定させるための設定を関数でまとめる
+  function FixedAnime() {
+    var headerH = $('.header').outerHeight(true);
+    var scroll = $(window).scrollTop();
+    if (scroll >= headerH){//headerの高さ以上になったら
+        $('.header').addClass('fixed');//fixedというクラス名を付与
+      }else{//それ以外は
+        $('.header').removeClass('fixed');//fixedというクラス名を除去
+      }
+  }
+  
+  // 画面をスクロールをしたら動かしたい場合の記述
+  $(window).scroll(function () {
+    FixedAnime();/* スクロール途中からヘッダーを出現させる関数を呼ぶ*/
+  });
+  
+  // ページが読み込まれたらすぐに動かしたい場合の記述
+  $(window).on('load', function () {
+    FixedAnime();/* スクロール途中からヘッダーを出現させる関数を呼ぶ*/
+  });
+  $(".openbtn").click(function () {//ボタンがクリックされたら
+    $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
+      $("#g-nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
+      $(".circle-bg").toggleClass('circleactive');//丸背景にcircleactiveクラスを付与
+  });
+  
+  $("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
+      $(".openbtn").removeClass('active');//ボタンの activeクラスを除去し
+      $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスを除去
+      $(".circle-bg").removeClass('circleactive');//丸背景のcircleactiveクラスを除去
+  });
+  </script>
+  </body>
