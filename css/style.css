@@ -233,24 +233,6 @@ li.production:hover span.cap{/*hoverした時の変化*/
   padding: 81px 0;
   text-align: center;
 }
-body{
-  animation-name:fadeDownAnime;
-  animation-duration:2s;
-  animation-fill-mode:forwards;
-  opacity:0;
-  }
-  
-  @keyframes fadeDownAnime{
-    from {
-      opacity: 0;
-    transform: translateY(-100px);
-    }
-  
-    to {
-      opacity: 1;
-    transform: translateY(0);
-    }
-  }
 /* スマホ */
 @media screen and (max-width: 599px){
   .openbtn,.circle-bg,#g-nav-list {
@@ -259,20 +241,6 @@ body{
   ul.pc-menu {
     display: none;
   }
-/*JSを使いfixedクラスが付与された際の設定*/
-.header.fixed{
-	position: fixed;
-  z-index: 999;
-  top:0;
-  left:0;
-}
-.gnav {
-  width: 1000px;
-  margin: 0 auto;
-  padding: 66px 0;
-  display: flex;
-  justify-content: space-between;
-}
 /* header */
 .gnav {
   padding: 1rem;
