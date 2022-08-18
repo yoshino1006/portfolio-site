@@ -259,6 +259,20 @@ body{
   ul.pc-menu {
     display: none;
   }
+/*JSを使いfixedクラスが付与された際の設定*/
+.header.fixed{
+	position: fixed;
+  z-index: 999;
+  top:0;
+  left:0;
+}
+.gnav {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 66px 0;
+  display: flex;
+  justify-content: space-between;
+}
 /* header */
 .gnav {
   padding: 1rem;
@@ -273,7 +287,8 @@ img.logo {
 .fv {
   background-image: url(../image/SP_FV.png);
   background-size: cover;
-  height: 433px;
+  width: 433px;
+  height: 384px;
   background-repeat: no-repeat;
 }
 
@@ -366,7 +381,7 @@ font-family:"PSL Ornanong Pro",system-ui;
 font-size: 1.5rem;
 color: #22201F;
 text-decoration: none;
-padding:1rem 10px;
+padding:10px;
 display: block;
 letter-spacing: 0.1em;
 font-weight: 600;
@@ -443,4 +458,8 @@ p.about-text {
 .production-list {
   justify-content: center;
 }
+}
+/* contact */
+.contact{
+   margin: 0 5%;
 }
