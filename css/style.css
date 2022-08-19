@@ -71,6 +71,7 @@ img.decoration {
 }
 /* about */
 p.about-text {
+  font-family:fot-tsukuardgothic-std, sans-serif;
   padding: 4rem 0;
   text-align: center;
   line-height: 2.2;
