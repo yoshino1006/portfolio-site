@@ -72,7 +72,7 @@ img.decoration {
 /* about */
 p.about-text {
   padding: 4rem 0;
-  font-family:'FOT-TsukuARdGothic Std';
+  font-family:　fot-tsukuardgothic-std, sans-serif;
   text-align: center;
   line-height: 2.2;
 }
@@ -147,7 +147,7 @@ li.production span.cap{
     top: 48%;
     left: 10%;
     transform: translate(-5%,10%);
-    font-family: 'FOT-TsukuARdGothic Std';
+    font-family: fot-tsukuardgothic-std, sans-serif;
     font-size: 11px;
     color: #22201F;
     line-height: 1.5;
@@ -157,7 +157,7 @@ li.production:hover span.cap{/*hoverした時の変化*/
 }
 /* contact */
 .contact-subtext {
-  font-family:'FOT-TsukuARdGothic Std';
+  font-family:fot-tsukuardgothic-std, sans-serif;
   font-size: 18px;
   color: #22201F;
   text-align: center;
@@ -170,7 +170,7 @@ li.production:hover span.cap{/*hoverした時の変化*/
   padding-top: 2.5rem;
 }
 .contact-label {
-  font-family:'FOT-TsukuARdGothic Std';
+  font-family:fot-tsukuardgothic-std, sans-serif;
   font-size: 18px;
   color: #22201F;
 }
@@ -199,7 +199,7 @@ li.production:hover span.cap{/*hoverした時の変化*/
   margin: 24px 0 80px;
 }
 .submit-button {
-  font-family:'FOT-TsukuARdGothic Std';
+  font-family:fot-tsukuardgothic-std, sans-serif;
   font-size: 1.25rem;
   font-weight: bold;
   background-color: #CA8344;
