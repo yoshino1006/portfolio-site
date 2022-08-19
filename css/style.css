@@ -38,7 +38,7 @@ ul.pc-menu {
 }
 li.pc-nav {
   padding-right: 80px;
-  font-family: "PSL Ornanong Pro",system-ui;
+  font-family: "PSL Ornanong Pro",nimbus-sans, sans-serif;
   font-size: 1.25rem;
   font-weight: 600;
   color: #22201F;
@@ -54,7 +54,7 @@ li.pc-nav:hover {
 h2.first-title {
   padding-top: 10rem;
   padding-bottom: 1rem;
-  font-family: "PSL Ornanong Pro",system-ui;
+  font-family: "PSL Ornanong Pro",nimbus-sans, sans-serif;
   font-size: 2rem;
   color: #22201F;
   text-align: center;
@@ -79,7 +79,7 @@ p.about-text {
 a.view-more {
   text-align: center;
   padding: 17px 68px;
-  font-family: "PSL Ornanong Pro",system-ui;
+  font-family: "PSL Ornanong Pro",nimbus-sans, sans-serif;
   font-size: 1.25rem;
   font-weight: bold;
   background-color: #CA8344;
@@ -101,7 +101,7 @@ a.view-more:hover{
   width: 100%;
 }
 h3.second-title {
-  font-family: "PSL Ornanong Pro",system-ui;
+  font-family: "PSL Ornanong Pro",nimbus-sans, sans-serif;
   padding: 56px 0;
   color: #22201F;
   display: block;
@@ -227,7 +227,7 @@ li.production:hover span.cap{/*hoverした時の変化*/
   margin-top: 10rem;
 }
 .footer-text {
-  font-family: "PSL Ornanong Pro",system-ui;
+  font-family: "PSL Ornanong Pro",nimbus-sans, sans-serif;
   color: #22201F;
   font-size: 20px;
   padding: 81px 0;
@@ -418,9 +418,6 @@ h2.first-title {
 }
 p.about-text {
   padding-top: 3.5rem;
-}
-a.view-more {
-  font-size: 1rem;
 }
 	
 /* works */
