@@ -419,6 +419,10 @@ h2.first-title {
 p.about-text {
   padding-top: 3.5rem;
 }
+a.view-more {
+  font-size: 1rem;
+}
+	
 /* works */
 .works-list {
   text-align: center;
@@ -426,8 +430,9 @@ p.about-text {
 .production-list {
   justify-content: center;
 }
-}
+	
 /* contact */
 .contact{
    padding: 0 5%;
+}
 }
